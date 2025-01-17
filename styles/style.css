@@ -19,7 +19,7 @@ header nav .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 3rem;
 }
 
 header nav .navbar > p {
@@ -55,7 +55,7 @@ header nav .navbar ul li a {
 header .content {
     max-width: 1136px;
     margin: 0 auto;
-    margin-top: 116px;
+    margin-top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,6 +92,10 @@ header .content p {
     margin-bottom: 32px;
 }
 
+header .content img {
+    width: 100%;
+}
+
 header .content button {
     all: unset;
     color: rgb(255, 255, 255);
@@ -104,4 +108,96 @@ header .content button {
     border-radius: 8px;
     background: rgb(255, 144, 14);
     margin-bottom: 50px;
+}
+
+main .teams {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+
+main .teams .team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 24px;
+}
+
+main .teams .features {
+    max-width: 537px;
+}
+
+main .teams .features h1 {
+    font-family: Work Sans;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: rgb(114, 114, 114);
+}
+
+main .teams .features h1 .bold {
+    font-weight: 700;
+    color: black;
+}
+
+main .teams .features h1 .org-fet {
+    font-weight: 700;
+    color: rgb(255, 144, 14);
+}
+
+main .teams .features p {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+main .teams .features button {
+    all: unset;
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 1.25rem 1.5rem;
+    margin-top: 15px;
+}
+
+
+/* Responsive section */
+
+@media screen and (max-width: 576px) {
+    header nav .navbar {
+        flex-direction: column;
+    }
+
+    main .teams {
+        flex-direction: column;
+    }
+
+    main .teams .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    main .teams .features {
+        margin-left: 20px;
+    }
+
+    header .content {
+        margin-top: 3rem;
+    }
 }
