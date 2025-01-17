@@ -50,3 +50,58 @@ header nav .navbar ul li a {
     text-align: center;
 }
 
+/* Header content section */
+
+header .content {
+    max-width: 1136px;
+    margin: 0 auto;
+    margin-top: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .content .brand-des {
+    max-width: 862px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+header .content h1 {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+header .content p {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+header .content button {
+    all: unset;
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 1.25rem 1.5rem;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    margin-bottom: 50px;
+}
